@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410D349D5AEF22161731B8E2 /* libPods-Allons-y.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F52BA2D2D48F010EDDC3ABF /* libPods-Allons-y.a */; };
 		F18CCCDD2547E95900BA6D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CCCDC2547E95900BA6D6A /* AppDelegate.swift */; };
 		F18CCCDF2547E95900BA6D6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CCCDE2547E95900BA6D6A /* SceneDelegate.swift */; };
 		F18CCCE12547E95900BA6D6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CCCE02547E95900BA6D6A /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F52BA2D2D48F010EDDC3ABF /* libPods-Allons-y.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Allons-y.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14F0C7C6F7B33070A85F36C /* Pods-Allons-y.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allons-y.debug.xcconfig"; path = "Target Support Files/Pods-Allons-y/Pods-Allons-y.debug.xcconfig"; sourceTree = "<group>"; };
 		F18CCCD92547E95900BA6D6A /* Allons-y.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Allons-y.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18CCCDC2547E95900BA6D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F18CCCDE2547E95900BA6D6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		F18CCCE52547E95C00BA6D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F18CCCE82547E95C00BA6D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F18CCCEA2547E95C00BA6D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26140D8EB4E02EE878A3C80 /* Pods-Allons-y.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allons-y.release.xcconfig"; path = "Target Support Files/Pods-Allons-y/Pods-Allons-y.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410D349D5AEF22161731B8E2 /* libPods-Allons-y.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12EC00AA9B03AED3EEDA2D79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F52BA2D2D48F010EDDC3ABF /* libPods-Allons-y.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4332A1AF745CE4B091151DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D14F0C7C6F7B33070A85F36C /* Pods-Allons-y.debug.xcconfig */,
+				F26140D8EB4E02EE878A3C80 /* Pods-Allons-y.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F18CCCD02547E95900BA6D6A = {
 			isa = PBXGroup;
 			children = (
 				F18CCCDB2547E95900BA6D6A /* Allons-y */,
 				F18CCCDA2547E95900BA6D6A /* Products */,
+				C4332A1AF745CE4B091151DA /* Pods */,
+				12EC00AA9B03AED3EEDA2D79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F18CCCED2547E95C00BA6D6A /* Build configuration list for PBXNativeTarget "Allons-y" */;
 			buildPhases = (
+				EBFD90414B7809A3BFFF96BA /* [CP] Check Pods Manifest.lock */,
 				F18CCCD52547E95900BA6D6A /* Sources */,
 				F18CCCD62547E95900BA6D6A /* Frameworks */,
 				F18CCCD72547E95900BA6D6A /* Resources */,
+				F82AD8B337D4653AF07C9DEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EBFD90414B7809A3BFFF96BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Allons-y-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F82AD8B337D4653AF07C9DEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Allons-y/Pods-Allons-y-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Allons-y/Pods-Allons-y-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Allons-y/Pods-Allons-y-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F18CCCD52547E95900BA6D6A /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		F18CCCEE2547E95C00BA6D6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D14F0C7C6F7B33070A85F36C /* Pods-Allons-y.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		F18CCCEF2547E95C00BA6D6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F26140D8EB4E02EE878A3C80 /* Pods-Allons-y.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
