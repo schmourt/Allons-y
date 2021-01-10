@@ -3,22 +3,53 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		410D349D5AEF22161731B8E2 /* libPods-Allons-y.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F52BA2D2D48F010EDDC3ABF /* libPods-Allons-y.a */; };
+		0C8F68BA59AF24AF7F4F2D45 /* Pods_Allons_y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B817993BF1610E9497C068 /* Pods_Allons_y.framework */; };
+		F15AAB612567928600EF67B3 /* MapboxCoreNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15AAB5D2567928600EF67B3 /* MapboxCoreNavigation.framework */; };
+		F15AAB622567928600EF67B3 /* MapboxCoreNavigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F15AAB5D2567928600EF67B3 /* MapboxCoreNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F15AAB632567928600EF67B3 /* MapboxDirections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15AAB5E2567928600EF67B3 /* MapboxDirections.framework */; };
+		F15AAB642567928600EF67B3 /* MapboxDirections.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F15AAB5E2567928600EF67B3 /* MapboxDirections.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F15AAB652567928600EF67B3 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15AAB5F2567928600EF67B3 /* MapboxMobileEvents.framework */; };
+		F15AAB662567928600EF67B3 /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F15AAB5F2567928600EF67B3 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F15AAB672567928600EF67B3 /* MapboxNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15AAB602567928600EF67B3 /* MapboxNavigation.framework */; };
+		F15AAB682567928600EF67B3 /* MapboxNavigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F15AAB602567928600EF67B3 /* MapboxNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F18CCCDD2547E95900BA6D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CCCDC2547E95900BA6D6A /* AppDelegate.swift */; };
 		F18CCCDF2547E95900BA6D6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CCCDE2547E95900BA6D6A /* SceneDelegate.swift */; };
 		F18CCCE12547E95900BA6D6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CCCE02547E95900BA6D6A /* ViewController.swift */; };
 		F18CCCE42547E95900BA6D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18CCCE22547E95900BA6D6A /* Main.storyboard */; };
-		F18CCCE62547E95C00BA6D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18CCCE52547E95C00BA6D6A /* Assets.xcassets */; };
 		F18CCCE92547E95C00BA6D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18CCCE72547E95C00BA6D6A /* LaunchScreen.storyboard */; };
+		F1A9D97725720B1C00B89E61 /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A9D97625720B1C00B89E61 /* InfoView.xib */; };
+		F1A9D9882574A76100B89E61 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9D9872574A76100B89E61 /* ViewModel.swift */; };
+		F1A9DA102580AB3200B89E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18CCCE52547E95C00BA6D6A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F15AAB692567928600EF67B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F15AAB662567928600EF67B3 /* MapboxMobileEvents.framework in Embed Frameworks */,
+				F15AAB682567928600EF67B3 /* MapboxNavigation.framework in Embed Frameworks */,
+				F15AAB622567928600EF67B3 /* MapboxCoreNavigation.framework in Embed Frameworks */,
+				F15AAB642567928600EF67B3 /* MapboxDirections.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		3F52BA2D2D48F010EDDC3ABF /* libPods-Allons-y.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Allons-y.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14F0C7C6F7B33070A85F36C /* Pods-Allons-y.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allons-y.debug.xcconfig"; path = "Target Support Files/Pods-Allons-y/Pods-Allons-y.debug.xcconfig"; sourceTree = "<group>"; };
+		F10951802567893C0074F3B3 /* MapboxNavigation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MapboxNavigation; path = Pods/MapboxNavigation/MapboxNavigation; sourceTree = "<group>"; };
+		F15AAB5D2567928600EF67B3 /* MapboxCoreNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxCoreNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15AAB5E2567928600EF67B3 /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15AAB5F2567928600EF67B3 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15AAB602567928600EF67B3 /* MapboxNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18CCCD92547E95900BA6D6A /* Allons-y.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Allons-y.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18CCCDC2547E95900BA6D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F18CCCDE2547E95900BA6D6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +58,10 @@
 		F18CCCE52547E95C00BA6D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F18CCCE82547E95C00BA6D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F18CCCEA2547E95C00BA6D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A9D97625720B1C00B89E61 /* InfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		F1A9D9872574A76100B89E61 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		F26140D8EB4E02EE878A3C80 /* Pods-Allons-y.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allons-y.release.xcconfig"; path = "Target Support Files/Pods-Allons-y/Pods-Allons-y.release.xcconfig"; sourceTree = "<group>"; };
+		F4B817993BF1610E9497C068 /* Pods_Allons_y.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Allons_y.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +69,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410D349D5AEF22161731B8E2 /* libPods-Allons-y.a in Frameworks */,
+				F15AAB652567928600EF67B3 /* MapboxMobileEvents.framework in Frameworks */,
+				F15AAB672567928600EF67B3 /* MapboxNavigation.framework in Frameworks */,
+				F15AAB632567928600EF67B3 /* MapboxDirections.framework in Frameworks */,
+				F15AAB612567928600EF67B3 /* MapboxCoreNavigation.framework in Frameworks */,
+				0C8F68BA59AF24AF7F4F2D45 /* Pods_Allons_y.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +83,12 @@
 		12EC00AA9B03AED3EEDA2D79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3F52BA2D2D48F010EDDC3ABF /* libPods-Allons-y.a */,
+				F15AAB5D2567928600EF67B3 /* MapboxCoreNavigation.framework */,
+				F15AAB5E2567928600EF67B3 /* MapboxDirections.framework */,
+				F15AAB5F2567928600EF67B3 /* MapboxMobileEvents.framework */,
+				F15AAB602567928600EF67B3 /* MapboxNavigation.framework */,
+				F10951802567893C0074F3B3 /* MapboxNavigation */,
+				F4B817993BF1610E9497C068 /* Pods_Allons_y.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -56,7 +99,6 @@
 				D14F0C7C6F7B33070A85F36C /* Pods-Allons-y.debug.xcconfig */,
 				F26140D8EB4E02EE878A3C80 /* Pods-Allons-y.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +130,8 @@
 				F18CCCE52547E95C00BA6D6A /* Assets.xcassets */,
 				F18CCCE72547E95C00BA6D6A /* LaunchScreen.storyboard */,
 				F18CCCEA2547E95C00BA6D6A /* Info.plist */,
+				F1A9D97625720B1C00B89E61 /* InfoView.xib */,
+				F1A9D9872574A76100B89E61 /* ViewModel.swift */,
 			);
 			path = "Allons-y";
 			sourceTree = "<group>";
@@ -104,6 +148,8 @@
 				F18CCCD62547E95900BA6D6A /* Frameworks */,
 				F18CCCD72547E95900BA6D6A /* Resources */,
 				F82AD8B337D4653AF07C9DEE /* [CP] Copy Pods Resources */,
+				E415C63AF8097C0468F9A06F /* [CP] Embed Pods Frameworks */,
+				F15AAB692567928600EF67B3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,8 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A9D97725720B1C00B89E61 /* InfoView.xib in Resources */,
 				F18CCCE92547E95C00BA6D6A /* LaunchScreen.storyboard in Resources */,
-				F18CCCE62547E95C00BA6D6A /* Assets.xcassets in Resources */,
+				F1A9DA102580AB3200B89E61 /* Assets.xcassets in Resources */,
 				F18CCCE42547E95900BA6D6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +207,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		E415C63AF8097C0468F9A06F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Allons-y/Pods-Allons-y-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Allons-y/Pods-Allons-y-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Allons-y/Pods-Allons-y-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EBFD90414B7809A3BFFF96BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,6 +272,7 @@
 			files = (
 				F18CCCE12547E95900BA6D6A /* ViewController.swift in Sources */,
 				F18CCCDD2547E95900BA6D6A /* AppDelegate.swift in Sources */,
+				F1A9D9882574A76100B89E61 /* ViewModel.swift in Sources */,
 				F18CCCDF2547E95900BA6D6A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -340,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1Ijoic2NobW91cnQiLCJhIjoiY2psYjNzbjl5MHJvZzNycGdleXUyZGM1NCJ9.bwBwH012KVJau-ZM7ylJtQ</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>location</string>
+	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>&quot;This app needs your location to do anything&quot;</string>
 	<key>CFBundleDevelopmentRegion</key>
